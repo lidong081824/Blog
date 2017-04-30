@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Blog</title>
+  <title>Category: GitHub 新手 | Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/categories/GitHub-新手/index.html">
 <meta property="og:site_name" content="Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog">
@@ -24,9 +24,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,11 +35,11 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
+          isHome: false,
           isPost: false,
           isArchive: false,
           isTag: false,
-          isCategory: false,
+          isCategory: true,
           open_in_new: false
       }
   </script>
@@ -231,74 +228,56 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
   
-    <div class="article-meta">
-      <a href="/2017/04/30/index/" class="article-date">
-      <time datetime="2017-04-30T08:45:00.000Z" itemprop="datePublished">2017-04-30</time>
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+          <div class="article-meta">
+              <a href="/2017/04/30/index/" class="archive-article-date">
+      <time datetime="2017-04-30T08:45:00.000Z" itemprop="datePublished">04-30</time>
 </a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
+        </div>
+         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a>
+      <a class="archive-article-title" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a>
     </h1>
   
 
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
+        <div class="article-info info-on-archive">
           
-              高手勿进! 高手请拿个小凳子坐在旁边...</br>GitHub 是一个面向开源以及私有项目的托管平台，因为只支持Git作为唯一版本库格式进行托管，所以叫做GitHub。git我们后面会讲到，现在我们来看看如何在GitHub上新建项目吧!
-          
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
     <div class="article-category tagcloud">
     <a class="article-category-link" href="/categories/GitHub-新手/">GitHub 新手</a>
     </div>
 
 
-      
+          
     <div class="article-tag tagcloud">
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/GitHub-标签/">GitHub 标签</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a  href="/2017/04/30/index/#more">去看看 >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
-  
 </article>
-
-
-
-
-
-
-
-
-
   
   
+    </div></section>
+  
+
+    
+
 </div>
       <footer id="footer">
     <div class="outer">
@@ -363,6 +342,17 @@
         };
     })
 </script>
+
+    <button class="hide-labels">TAG 开关</button>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $(".article-info").toggle(200);
+            });
+        });
+    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
