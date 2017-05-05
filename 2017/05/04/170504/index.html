@@ -12,17 +12,16 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/04/170504/index.html">
 <meta property="og:site_name" content="李东的个人博客">
 <meta property="og:description" content="工作当中我们有时候会需要利用原生js动态的生成节点，追加节点，删除节点...">
-<meta property="og:image" content="http://yoursite.com/img/2017050201.png">
-<meta property="og:image" content="http://yoursite.com/img/2017050202.png">
+<meta property="og:image" content="http://yoursite.com/img/2017050501.png">
+<meta property="og:image" content="http://yoursite.com/img/2017050502.png">
 <meta property="og:image" content="http://yoursite.com/img/2017050203.png">
-<meta property="og:image" content="http://yoursite.com/img/2017050204.png">
-<meta property="og:image" content="http://yoursite.com/img/2017050205.png">
-<meta property="og:image" content="http://yoursite.com/img/2017050206.png">
-<meta property="og:updated_time" content="2017-05-05T02:33:26.486Z">
+<meta property="og:image" content="http://yoursite.com/img/2017050504.png">
+<meta property="og:image" content="http://yoursite.com/img/2017050505.png">
+<meta property="og:updated_time" content="2017-05-05T03:56:17.636Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript中删除节点中的小坑">
 <meta name="twitter:description" content="工作当中我们有时候会需要利用原生js动态的生成节点，追加节点，删除节点...">
-<meta name="twitter:image" content="http://yoursite.com/img/2017050201.png">
+<meta name="twitter:image" content="http://yoursite.com/img/2017050501.png">
   
     <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
   
@@ -122,7 +121,7 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/about">留言打卡</a></li>
+                            <li><a href="/about">写在前面</a></li>
                         
                         </ul>
                     </nav>
@@ -150,7 +149,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        <a href="/tags/GitHub-标签/" style="font-size: 20px;">GitHub 标签</a> <a href="/tags/JavaScript-标签/" style="font-size: 10px;">JavaScript 标签</a> <a href="/tags/前端-标签/" style="font-size: 10px;">前端 标签</a>
+                        <a href="/tags/Git-标签/" style="font-size: 10px;">Git 标签</a> <a href="/tags/GitHub-标签/" style="font-size: 10px;">GitHub 标签</a> <a href="/tags/JavaScript-标签/" style="font-size: 10px;">JavaScript 标签</a>
                     </div>
                 </section>
                 
@@ -199,7 +198,7 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/about">留言打卡</a></li>
+                    <li><a href="/about">写在前面</a></li>
                 
                 <div class="clearfix"></div>
                 </ul>
@@ -268,29 +267,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>　　<strong> GitHub新建项目</strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+        <p>　　<strong> JavaScript新建删除节点</strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
 <ul>
 <li><a id="more"></a>
 <the rest="" of="" contents="" |="" 余下全文="">
 
 </the></li>
 </ul>
-<h3 id="git下载与安装"><a href="#git下载与安装" class="headerlink" title="git下载与安装"></a>git下载与安装</h3><p>git安装这里不再累赘，不明白的同学可以到<a href="https://git-scm.com/" target="_blank" rel="external">git官网</a>下载，安装步骤比较机械，直接下一步完成就好了，PS:如果你的电脑内存比较小，不建议安装在c盘，土豪请随意。</p>
-<h3 id="git生成ssh公私钥"><a href="#git生成ssh公私钥" class="headerlink" title="git生成ssh公私钥"></a>git生成ssh公私钥</h3><ol>
-<li>首先查看你的电脑是法是否已经存在公私钥，出现如图所示则表示你已经生成了公私钥。<br><img src="/img/2017050201.png" alt="查看是否存在公私钥"></li>
-</ol>
-<h3 id="git设置用户名邮箱"><a href="#git设置用户名邮箱" class="headerlink" title="git设置用户名邮箱"></a>git设置用户名邮箱</h3><ol>
-<li><p>查看你的git配置文件中的用户名/邮箱，就像SVN中的账号一样。（如果你是首次安装git请跳过步骤2）<br><img src="/img/2017050202.png" alt="查看git用户名邮箱"></p>
-</li>
-<li><p>填写/修改你的用户名/邮箱。(首次设置和第一次添加都是这个命令)<br><img src="/img/2017050203.png" alt="设置/修改用户名/邮箱"></p>
-</li>
-</ol>
-<h3 id="添加公钥到GitHub上"><a href="#添加公钥到GitHub上" class="headerlink" title="添加公钥到GitHub上"></a>添加公钥到GitHub上</h3><ol>
-<li>将你的ssh公钥文件添加到GitHub上（头像旁边点击下拉找到Seetings/ SSH and GPG keys/ New SSH key 依次找到这几个目录）<br><img src="/img/2017050204.png" alt="添加你的公钥到GitHub"></li>
-</ol>
-<h3 id="克隆GitHub仓库"><a href="#克隆GitHub仓库" class="headerlink" title="克隆GitHub仓库"></a>克隆GitHub仓库</h3><ol>
-<li>初始化git，然后将GitHub仓库中代码克隆到你的本地。<br><img src="/img/2017050205.png" alt="复制你GitHub仓库的地址"><br>如果你是新建文件夹请先执行红色git init代码，在进行克隆<br><img src="/img/2017050206.png" alt="克隆仓库"></li>
-</ol>
+<h3 id="创建节点"><a href="#创建节点" class="headerlink" title="创建节点"></a>创建节点</h3><p>在编辑器中创建你所需要的节点 createElement<br><img src="/img/2017050501.png" alt="创建节点"></p>
+<h3 id="插入节点"><a href="#插入节点" class="headerlink" title="插入节点"></a>插入节点</h3><p>将新创建的节点追加到你想要存放的位置上,插入方式有很多种，具体可以参考<a href="http://www.w3school.com.cn/jsref/dom_obj_all.asp" target="_blank" rel="external">w3school</a>。(ps:新建节点不代表 dom上存在这个节点，一定要追加到dom结构上去。)<br><img src="/img/2017050502.png" alt="插入节点"></p>
+<h3 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h3><p>对你信创建的节点进行操作,首先你要获取节点，这里是最通俗的写法，你也可以使用循坏迭代来获取。<br><img src="/img/2017050203.png" alt="获取节点"></p>
+<h3 id="操作节点"><a href="#操作节点" class="headerlink" title="操作节点"></a>操作节点</h3><p>拿到节点后对节点进行操作,设置样式赋值等等。<br><img src="/img/2017050504.png" alt="操作节点"></p>
+<h3 id="删除节点-小坑来了"><a href="#删除节点-小坑来了" class="headerlink" title="删除节点(小坑来了!!)"></a>删除节点(小坑来了!!)</h3><p>当你需要删除节点的时候，很多人就会查阅文档<a href="http://www.w3school.com.cn/jsref/dom_obj_all.asp" target="_blank" rel="external">w3school</a>。然后很自信的写上了removeChild，然后项目一跑起来，就发现各种bug 各种错。这里我用亲身经历告诉你，删除节点一定一定一定要从后面往前面删除，否则!后果自负!!! (司机,我到了。)<br><img src="/img/2017050505.png" alt="删除节点"></p>
 
       
       
@@ -303,7 +291,7 @@
         <p><span>本文标题:</span><a href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
         <p><span>发布时间:</span>2017年05月04日 - 16时08分</p>
-        <p><span>最后更新:</span>2017年05月05日 - 10时33分</p>
+        <p><span>最后更新:</span>2017年05月05日 - 11时56分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/05/04/170504/" title="JavaScript中删除节点中的小坑">http://yoursite.com/2017/05/04/170504/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/04/170504/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -336,7 +324,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#git下载与安装"><span class="toc-number">1.</span> <span class="toc-text">git下载与安装</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git生成ssh公私钥"><span class="toc-number">2.</span> <span class="toc-text">git生成ssh公私钥</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#git设置用户名邮箱"><span class="toc-number">3.</span> <span class="toc-text">git设置用户名邮箱</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#添加公钥到GitHub上"><span class="toc-number">4.</span> <span class="toc-text">添加公钥到GitHub上</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆GitHub仓库"><span class="toc-number">5.</span> <span class="toc-text">克隆GitHub仓库</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建节点"><span class="toc-number">1.</span> <span class="toc-text">创建节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插入节点"><span class="toc-number">2.</span> <span class="toc-text">插入节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#获取节点"><span class="toc-number">3.</span> <span class="toc-text">获取节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#操作节点"><span class="toc-number">4.</span> <span class="toc-text">操作节点</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#删除节点-小坑来了"><span class="toc-number">5.</span> <span class="toc-text">删除节点(小坑来了!!)</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -402,7 +390,7 @@
             <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/120502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/170430/">完善中</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/120502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
