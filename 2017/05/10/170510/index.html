@@ -3,18 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | 李东的个人博客</title>
+  <title>js事件流(如何阻止事件冒泡) | 李东的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#ceshi             Foo1">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/BlogLog/index.html">
+  <meta name="description" content="什么是js事件流? js事件流行为主要分为事件冒泡和事件捕获...">
+<meta name="keywords" content="JavaScript 标签">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js事件流(如何阻止事件冒泡)">
+<meta property="og:url" content="http://yoursite.com/2017/05/10/170510/index.html">
 <meta property="og:site_name" content="李东的个人博客">
-<meta property="og:description" content="#ceshi             Foo1">
-<meta property="og:updated_time" content="2017-04-28T08:37:10.114Z">
+<meta property="og:description" content="什么是js事件流? js事件流行为主要分为事件冒泡和事件捕获...">
+<meta property="og:updated_time" content="2017-05-10T03:49:03.024Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="#ceshi             Foo1">
+<meta name="twitter:title" content="js事件流(如何阻止事件冒泡)">
+<meta name="twitter:description" content="什么是js事件流? js事件流行为主要分为事件冒泡和事件捕获...">
   
     <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
   
@@ -40,7 +41,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -218,11 +219,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-170510" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/BlogLog/index.html" class="article-date">
-      <time datetime="2017-04-27T08:37:02.000Z" itemprop="datePublished">2017-04-27</time>
+      <a href="/2017/05/10/170510/" class="article-date">
+      <time datetime="2017-05-10T03:15:00.000Z" itemprop="datePublished">2017-05-10</time>
 </a>
     </div>
   
@@ -235,7 +236,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      js事件流(如何阻止事件冒泡)
     </h1>
   
 
@@ -243,8 +244,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/JavaScript-新手/">JavaScript 新手</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript-标签/">JavaScript 标签</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -252,45 +261,18 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <p>　　<strong> js事件流(如何阻止事件冒泡) </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
 
-
-          
-        <p>#ceshi</p>
-<table><br>    <tr><br>        <td>Foo1</td><br>    </tr><br></table>
-
-
+</the></li>
+</ul>
+<h3 id="什么是js事件流"><a href="#什么是js事件流" class="headerlink" title="什么是js事件流"></a>什么是js事件流</h3><p>从字面上来解释js事件流就是JavaScript从dom结构上接受到事件的顺序以及事件的传播过程统称为js事件流，js事件是JavaScript和dom结构沟通的桥梁。js事件流又分事件冒泡和事件捕获。(ps:IE浏览器目前只支持事件冒泡，不支持事件捕获,而其他主流浏览器既支持冒泡事件也支持捕获事件)</p>
+<h3 id="事件冒泡"><a href="#事件冒泡" class="headerlink" title="事件冒泡"></a>事件冒泡</h3><p>js事件冒泡就是js事件从当前节点向上一节点直到document节点上传播的过程，我们来看代码!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">		&lt;title&gt;事件冒泡&lt;/title&gt;</div><div class="line">		&lt;script src=&quot;http://code.jquery.com/jquery-latest.js&quot;&gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">		function btn_F()&#123;</div><div class="line">			alert(&quot;我是按钮!&quot;);</div><div class="line">		&#125;</div><div class="line">		function tr_F()&#123;</div><div class="line">			alert(&quot;我是tr!&quot;);</div><div class="line">		&#125;</div><div class="line">		function table_F()&#123;</div><div class="line">			alert(&quot;我是table!&quot;);</div><div class="line">		&#125;</div><div class="line">	&lt;/script&gt;</div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;table onclick=&quot;table_F()&quot;&gt;</div><div class="line">			&lt;tr onclick=&quot;tr_F()&quot;&gt;</div><div class="line">				&lt;td&gt;</div><div class="line">					&lt;div&gt;</div><div class="line">						&lt;a id=&quot;btn&quot; href=&quot;http://lidong0818.top&quot; onclick=&quot;btn_F()&quot;&gt;点击我&lt;/a&gt;</div><div class="line">					&lt;/div&gt;</div><div class="line">				&lt;/td&gt;</div><div class="line">			&lt;/tr&gt;</div><div class="line">		&lt;/table&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>当我点击”点击我”页面上会先后弹出 “我是按钮!”   “我是tr!”   “我是table!”  最后跳到 <a href="http://lidong0818.top" target="_blank" rel="external">http://lidong0818.top</a> 的网站上去。</p>
+<h3 id="阻止事件冒泡"><a href="#阻止事件冒泡" class="headerlink" title="阻止事件冒泡"></a>阻止事件冒泡</h3><p>如何阻止事件冒泡呢?我们接着来看代码,我们替换上面代码的script标签里面的内容!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">       $(function() &#123;</div><div class="line">            $(&quot;#btn&quot;).click(function(event) &#123;</div><div class="line">                //阻止事件冒泡,但不阻止默认事件</div><div class="line">                event.stopPropagation();</div><div class="line">                //阻止事件冒泡,也阻止默认事件</div><div class="line">                return false;</div><div class="line">                //不阻止冒泡事件,但是阻止默认事件</div><div class="line">                event.preventDefault();</div><div class="line">            &#125;);</div><div class="line">        &#125;);</div><div class="line"> 	function btn_F()&#123;</div><div class="line"> 		alert(&quot;我是按钮!&quot;);</div><div class="line"> 	&#125;</div><div class="line"> 	function tr_F()&#123;</div><div class="line"> 		alert(&quot;我是tr!&quot;);</div><div class="line"> 	&#125;</div><div class="line"> 	function table_F()&#123;</div><div class="line"> 		alert(&quot;我是table!&quot;);</div><div class="line"> 	&#125;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>在此强调!!阻止事件冒泡的方法(ps:方法3不是阻止事件冒泡的方法)<br>1.stopPropagation();//阻止事件冒泡,但是阻止默认事件.<br>2.return false;     //既阻止事件冒泡,也阻止默认事件.<br>3.preventDefualt(); //不阻止事件冒泡,但是阻止默认事件.</p>
 
       
       
@@ -299,10 +281,71 @@
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
+        <p><span>发布时间:</span>2017年05月10日 - 11时15分</p>
+        <p><span>最后更新:</span>2017年05月10日 - 11时49分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/10/170510/" title="js事件流(如何阻止事件冒泡)">http://yoursite.com/2017/05/10/170510/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/10/170510/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/05/05/170505/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          ng-options默认选中对象(或默认值)
+        
+      </div>
+    </a>
+  
+  
+</nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是js事件流"><span class="toc-number">1.</span> <span class="toc-text">什么是js事件流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#事件冒泡"><span class="toc-number">2.</span> <span class="toc-text">事件冒泡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#阻止事件冒泡"><span class="toc-number">3.</span> <span class="toc-text">阻止事件冒泡</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
 
 
 
@@ -329,6 +372,37 @@
     
 
 
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/05/05/170505/" title="上一篇: ng-options默认选中对象(或默认值)">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
 
 
