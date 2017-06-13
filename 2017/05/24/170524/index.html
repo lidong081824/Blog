@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/05/24/170524/index.html">
 <meta property="og:site_name" content="李东的个人博客">
 <meta property="og:description" content="JavaScript最经典的面试题,需要面试或者想要深入掌握的同学可以看看 !">
-<meta property="og:updated_time" content="2017-05-24T07:33:47.983Z">
+<meta property="og:updated_time" content="2017-05-27T06:36:30.223Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JavaScript 经典笔试题">
 <meta name="twitter:description" content="JavaScript最经典的面试题,需要面试或者想要深入掌握的同学可以看看 !">
@@ -278,6 +278,10 @@
 <p><br></p>
 <h3 id="this在JavaScript中如何工作"><a href="#this在JavaScript中如何工作" class="headerlink" title="this在JavaScript中如何工作"></a>this在JavaScript中如何工作</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">var content = &apos;李东好帅！&apos;;</div><div class="line"></div><div class="line">var obj = &#123;</div><div class="line">	content :&apos;是真的好帅！&apos;,</div><div class="line"> 	zobj :&#123;</div><div class="line">		content : &apos;好帅！&apos;,</div><div class="line">		getContent : function()&#123;</div><div class="line">			return this.content;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div><div class="line">var text = obj.zobj.getContent;</div><div class="line">console.log(text()); //李东好帅！</div><div class="line">console.log(obj.zobj.getContent()); //好帅！</div></pre></td></tr></table></figure>
 <p>ps<br>1，在一个函数中,this的行为,取决于javascript函数的调用方式和定义方式,而不仅仅是看它是如何被定义的。<br>2，当getContent()方法被分配到全局变量test时,上下文指全局对象,即this被赋予全局作用域权限,所以值为’李东好帅！’。<br>3，当getContent()方法被调用作为obj.zobj对象的函数时,上下文指obj.zobj对象,即this被赋予obj.zobj对象的权限,所以值为’好帅！’。</p>
+<p><br></p>
+<h3 id="split和join的区别"><a href="#split和join的区别" class="headerlink" title="split和join的区别"></a>split和join的区别</h3><p>split()方法用于把字符串按字符串内存在的标识分割为字符串数组。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//定义的字符串</div><div class="line">var arr = &quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;;</div><div class="line"></div><div class="line">//参数1 字符串中存在的标识(例如逗号，)</div><div class="line">//参数2 返回数组的长度，默认全长度</div><div class="line">var arr1 = arr.split(&quot;，&quot;); 	//[&quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,1);	//[&quot;今天&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,2);	//[&quot;今天，天气很不错&quot;]</div><div class="line">var arr1 = arr.split(&quot;，&quot;,3);	//[&quot;今天，天气很不错，我和我女朋友去逛公园了...&quot;]</div></pre></td></tr></table></figure></p>
+<p>join()方法把数组中元素按指定符号加入到字符串。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//定义的数组</div><div class="line">var arr2 = [&quot;今天&quot;,&quot;天气很不错&quot;,&quot;我和我女朋友去逛公园了...&quot;];</div><div class="line"></div><div class="line">//默认是一逗号分隔</div><div class="line">var arr3 = arr2.join();		//今天，天气很不错，我和我女朋友去逛公园了...</div><div class="line">var arr3 = arr2.join(&quot;-&quot;);	//今天-天气很不错-我和我女朋友去逛公园了...</div><div class="line">var arr3 = arr2.join(&quot;#&quot;);	//今天#天气很不错#我和我女朋友去逛公园了...</div></pre></td></tr></table></figure></p>
+<p>ps<br>1,split()相当于字符串转数组<br>2,join()常用于数组转字符串,数组转字符串拓展用法:toString()</p>
 
       
       
@@ -290,7 +294,7 @@
         <p><span>本文标题:</span><a href="/2017/05/24/170524/">JavaScript 经典笔试题</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
         <p><span>发布时间:</span>2017年05月24日 - 14时30分</p>
-        <p><span>最后更新:</span>2017年05月24日 - 15时33分</p>
+        <p><span>最后更新:</span>2017年05月27日 - 14时36分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/05/24/170524/" title="JavaScript 经典笔试题">http://yoursite.com/2017/05/24/170524/</a>
             <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/24/170524/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -316,6 +320,11 @@
     </a>
   
   
+    <a href="/2017/05/26/170526/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JavaScript this 关键字的用法</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
 </nav>
 
   
@@ -323,7 +332,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展原生方法"><span class="toc-number">2.</span> <span class="toc-text">拓展原生方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#申明提升"><span class="toc-number">3.</span> <span class="toc-text">申明提升</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this在JavaScript中如何工作"><span class="toc-number">4.</span> <span class="toc-text">this在JavaScript中如何工作</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#作用域"><span class="toc-number">1.</span> <span class="toc-text">作用域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#拓展原生方法"><span class="toc-number">2.</span> <span class="toc-text">拓展原生方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#申明提升"><span class="toc-number">3.</span> <span class="toc-text">申明提升</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#this在JavaScript中如何工作"><span class="toc-number">4.</span> <span class="toc-text">this在JavaScript中如何工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#split和join的区别"><span class="toc-number">5.</span> <span class="toc-text">split和join的区别</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -386,10 +395,12 @@
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2017/05/26/170526/" title="下一篇: JavaScript this 关键字的用法">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/17052601/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
     <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
