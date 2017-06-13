@@ -3,19 +3,21 @@
 <head>
   <meta charset="utf-8">
   
-  <title>JavaScript this 关键字的用法 | 李东的个人博客</title>
+  <title>jQuery 命名冲突的三种解决方案 | 李东的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this 关键词的用法,this关键字是函数运行时自动生成的内部对象,只在内部调用。">
-<meta name="keywords" content="JavaScript 标签">
+  <meta name="description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
+<meta name="keywords" content="jQuery 标签">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript this 关键字的用法">
-<meta property="og:url" content="http://yoursite.com/2017/05/26/170526/index.html">
+<meta property="og:title" content="jQuery 命名冲突的三种解决方案">
+<meta property="og:url" content="http://yoursite.com/2017/06/08/170608/index.html">
 <meta property="og:site_name" content="李东的个人博客">
-<meta property="og:description" content="this 关键词的用法,this关键字是函数运行时自动生成的内部对象,只在内部调用。">
-<meta property="og:updated_time" content="2017-05-26T07:18:58.860Z">
+<meta property="og:description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
+<meta property="og:image" content="http://yoursite.com/img/2017060801.png">
+<meta property="og:updated_time" content="2017-06-08T05:48:26.128Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript this 关键字的用法">
-<meta name="twitter:description" content="this 关键词的用法,this关键字是函数运行时自动生成的内部对象,只在内部调用。">
+<meta name="twitter:title" content="jQuery 命名冲突的三种解决方案">
+<meta name="twitter:description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
+<meta name="twitter:image" content="http://yoursite.com/img/2017060801.png">
   
     <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
   
@@ -219,11 +221,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-170526" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-170608" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/05/26/170526/" class="article-date">
-      <time datetime="2017-05-26T03:20:00.000Z" itemprop="datePublished">2017-05-26</time>
+      <a href="/2017/06/08/170608/" class="article-date">
+      <time datetime="2017-06-08T04:15:00.000Z" itemprop="datePublished">2017-06-08</time>
 </a>
     </div>
   
@@ -236,7 +238,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      JavaScript this 关键字的用法
+      jQuery 命名冲突的三种解决方案
     </h1>
   
 
@@ -245,13 +247,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    <a class="article-category-link" href="/categories/jQuery/">jQuery</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript-标签/">JavaScript 标签</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery-标签/">jQuery 标签</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -261,22 +263,17 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>　　<strong> JavaScript this 关键字的用 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+        <p>　　<strong> jQuery 命名冲突的三种解决方案 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
 <ul>
 <li><a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文="">
-
+<the rest="" of="" contents="" |="" 余下全文=""><br>$ 符号是jQuery的别称,所有使用$符号的地方都可以使用jQuery代替,两则的作用完全相同。<h3 id="noConflict-方法"><a href="#noConflict-方法" class="headerlink" title="noConflict()方法"></a>noConflict()方法</h3>jQuery.noConflict()方法将变量$的所有权让给前面一个实现他的js库。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		# divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		(function()&#123;</div><div class="line">			//jQuery将$变量的控制权让出,由其他实现它的js库使用</div><div class="line">			jQuery.noConflict();</div><div class="line">			//此时报错，因为jQuery已经失去了对$变量的操作权</div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//此时正常，因为 $ 是 jQuery 的别称，用法雷同，虽然jQuery失去了$变量的操作权,但是其任然拥有jQuery变量的使用权。</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)();</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
 </the></li>
 </ul>
-<h3 id="单纯的函数调用"><a href="#单纯的函数调用" class="headerlink" title="单纯的函数调用"></a>单纯的函数调用</h3><p>这个栗子指函数被全局调用，所以此时this 代表全局对象<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function test()&#123;</div><div class="line"></div><div class="line">	this.x = 1;</div><div class="line"></div><div class="line">	alert(this.x);</div><div class="line">&#125;</div><div class="line"></div><div class="line">test(); // 1</div></pre></td></tr></table></figure></p>
-<p>为了证明this 为全局对象,我们改变写法。得到结果是 2 !<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">var x = 2;</div><div class="line">function test()&#123;</div><div class="line"></div><div class="line">	alert(this.x);</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">test(); // 2</div></pre></td></tr></table></figure></p>
+<p><img src="/img/2017060801.png" alt="效果图"></p>
 <p><br></p>
-<h3 id="作为对象的方法调用"><a href="#作为对象的方法调用" class="headerlink" title="作为对象的方法调用"></a>作为对象的方法调用</h3><p>此时函数作为对象的方法调用,此时this 就指这个这个对象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">function test()&#123;</div><div class="line"></div><div class="line">	alert(this.x);</div><div class="line"></div><div class="line">&#125;</div><div class="line"></div><div class="line">var obj = &#123;&#125;;</div><div class="line"></div><div class="line">obj.x = 2;//3 //4</div><div class="line"></div><div class="line">obj.f = test;</div><div class="line"></div><div class="line">obj.f(); // 2 //3 //4</div></pre></td></tr></table></figure></p>
+<h3 id="自定义别名"><a href="#自定义别名" class="headerlink" title="自定义别名"></a>自定义别名</h3><p>自定义jQuery别名来解决命名冲突<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		#divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		(function()&#123;</div><div class="line">			//此处 jq1 就代表jQuery</div><div class="line">			var jq1 = $.noConflict();</div><div class="line">			//此处 jq2 同样就代表jQuery</div><div class="line">			var jq2 = jQuery.noConflict();</div><div class="line"></div><div class="line">			jq1(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)();</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
 <p><br></p>
-<h3 id="作为构造函数调用"><a href="#作为构造函数调用" class="headerlink" title="作为构造函数调用"></a>作为构造函数调用</h3><p>构造函数就是通过一个函数生成一个新得对象,此时this 就指这个新得对象。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">function test()&#123;</div><div class="line"></div><div class="line">	this.x = 1;</div><div class="line">&#125;</div><div class="line"></div><div class="line">var f = new test();</div><div class="line"></div><div class="line">alert(f.x);// 1</div></pre></td></tr></table></figure></p>
-<p><br></p>
-<h3 id="使用apply-call-调用"><a href="#使用apply-call-调用" class="headerlink" title="使用apply / call 调用"></a>使用apply / call 调用</h3><p>apply/call的作用是改变函数的调用对象,第一个参数就代表改变后的调用这个函数的对象(这句话很绕口,<br>1 f.m();指作为对象的方法调用,<br>2 f.m.apply();指this就被改变为了全局对象,因为apply没有传入对象,<br>3 f.m.apply(f);指this就被改变为了f这个对象),<br>此时this 就指第一个参数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">var x = 2;</div><div class="line"></div><div class="line">function test()&#123;</div><div class="line"></div><div class="line">	alert(this.x);</div><div class="line">&#125;</div><div class="line"></div><div class="line">var h = &#123;&#125;;</div><div class="line"></div><div class="line">f.h = 3;</div><div class="line"></div><div class="line">var f = &#123;&#125;;</div><div class="line"></div><div class="line">f.x = 1;</div><div class="line"></div><div class="line">f.m = test;</div><div class="line"></div><div class="line">f.m(); //1     //结果为1 ,是因为此处函数作为对象的方法调用</div><div class="line"></div><div class="line">f.m.apply(); //2    //注意参数为空时,默认调用全局对象</div><div class="line"></div><div class="line">f.m.call(h); //3</div></pre></td></tr></table></figure></p>
-<p>call和apply 都是改变函数的调用对象的方法,第一个参数的意义完全相同。<br>第二个参数call依次往后排列,而apply是直接传入一个数组。</p>
+<h3 id="使用区块-区块中依然使用jQuery实现的-变量"><a href="#使用区块-区块中依然使用jQuery实现的-变量" class="headerlink" title="使用区块 区块中依然使用jQuery实现的$变量"></a>使用区块 区块中依然使用jQuery实现的$变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		#divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		//jQuery将 $ 变量使用权让出</div><div class="line">		jQuery.noConflict();</div><div class="line"></div><div class="line">		//写法一</div><div class="line">		jQuery(document).ready(function($)&#123;</div><div class="line"></div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//和上面的效果一样</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;);</div><div class="line"></div><div class="line">		//写法二</div><div class="line">		(function($)&#123;</div><div class="line">			//在这个方法中 所有使用到的 $ 变量都是jQuery.js中实现的。</div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//和上面的效果一样</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)(jQuery);</div><div class="line"></div><div class="line">		//写法二</div><div class="line">		//定义别名 后在使用区块</div><div class="line">		var jq1 = jQuery.noConflict();</div><div class="line">		jq1(function()&#123;</div><div class="line">			jq1(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
 
       
       
@@ -286,13 +283,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></p>
+        <p><span>本文标题:</span><a href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
-        <p><span>发布时间:</span>2017年05月26日 - 11时20分</p>
-        <p><span>最后更新:</span>2017年05月26日 - 15时18分</p>
+        <p><span>发布时间:</span>2017年06月08日 - 12时15分</p>
+        <p><span>最后更新:</span>2017年06月08日 - 13时48分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/05/26/170526/" title="JavaScript this 关键字的用法">http://yoursite.com/2017/05/26/170526/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/26/170526/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/06/08/170608/" title="jQuery 命名冲突的三种解决方案">http://yoursite.com/2017/06/08/170608/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/06/08/170608/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -305,20 +302,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/05/24/170524/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/05/26/17052601/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          JavaScript 经典笔试题
+          异步加载 JS 的3种方法
         
       </div>
     </a>
   
-  
-    <a href="/2017/05/26/17052601/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">异步加载 JS 的3种方法</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -327,7 +319,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#单纯的函数调用"><span class="toc-number">1.</span> <span class="toc-text">单纯的函数调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作为对象的方法调用"><span class="toc-number">2.</span> <span class="toc-text">作为对象的方法调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#作为构造函数调用"><span class="toc-number">3.</span> <span class="toc-text">作为构造函数调用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用apply-call-调用"><span class="toc-number">4.</span> <span class="toc-text">使用apply / call 调用</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#noConflict-方法"><span class="toc-number">1.</span> <span class="toc-text">noConflict()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义别名"><span class="toc-number">2.</span> <span class="toc-text">自定义别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用区块-区块中依然使用jQuery实现的-变量"><span class="toc-number">3.</span> <span class="toc-text">使用区块 区块中依然使用jQuery实现的$变量</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -384,15 +376,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/05/24/170524/" title="上一篇: JavaScript 经典笔试题">
+            <a href="/2017/05/26/17052601/" title="上一篇: 异步加载 JS 的3种方法">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/05/26/17052601/" title="下一篇: 异步加载 JS 的3种方法">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/17052601/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
