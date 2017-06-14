@@ -3,18 +3,22 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | 李东的个人博客</title>
+  <title>异步加载 JS 的3种方法 | 李东的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="#ceshi             Foo2">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/BlogLog/index1.html">
+  <meta name="description" content="网站首页往往是官网的脸,如果千呼万唤始出来的话就会给浏览者一种想死的心理,我上一家公司的经理就曾经给我提到过这个首页加载炒鸡慢的问题,不过很遗憾,当时我并没有想到办法来解决...">
+<meta name="keywords" content="JavaScript 标签">
+<meta property="og:type" content="article">
+<meta property="og:title" content="异步加载 JS 的3种方法">
+<meta property="og:url" content="http://yoursite.com/2017/05/26/17052601/index.html">
 <meta property="og:site_name" content="李东的个人博客">
-<meta property="og:description" content="#ceshi             Foo2">
-<meta property="og:updated_time" content="2017-04-28T08:31:01.618Z">
+<meta property="og:description" content="网站首页往往是官网的脸,如果千呼万唤始出来的话就会给浏览者一种想死的心理,我上一家公司的经理就曾经给我提到过这个首页加载炒鸡慢的问题,不过很遗憾,当时我并没有想到办法来解决...">
+<meta property="og:image" content="http://yoursite.com/img/2017052601.png">
+<meta property="og:image" content="http://yoursite.com/img/2017052602.png">
+<meta property="og:updated_time" content="2017-05-26T07:16:34.837Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="#ceshi             Foo2">
+<meta name="twitter:title" content="异步加载 JS 的3种方法">
+<meta name="twitter:description" content="网站首页往往是官网的脸,如果千呼万唤始出来的话就会给浏览者一种想死的心理,我上一家公司的经理就曾经给我提到过这个首页加载炒鸡慢的问题,不过很遗憾,当时我并没有想到办法来解决...">
+<meta name="twitter:image" content="http://yoursite.com/img/2017052601.png">
   
     <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
   
@@ -40,7 +44,7 @@
           fancybox: true,
           animate: true,
           isHome: false,
-          isPost: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -218,11 +222,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-17052601" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/BlogLog/index1.html" class="article-date">
-      <time datetime="2017-04-27T08:37:02.000Z" itemprop="datePublished">2017-04-27</time>
+      <a href="/2017/05/26/17052601/" class="article-date">
+      <time datetime="2017-05-26T06:20:00.000Z" itemprop="datePublished">2017-05-26</time>
 </a>
     </div>
   
@@ -235,7 +239,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      异步加载 JS 的3种方法
     </h1>
   
 
@@ -243,8 +247,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/JavaScript/">JavaScript</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/JavaScript-标签/">JavaScript 标签</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -252,43 +264,19 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta {
-        display: none;
-    }
-    #container .article .article-title {
-        padding-right: 0;
-    }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
-    }
-    .article-header:hover {
-        border-left: none;
-    }
-    .article-title {
-        font-size: 1.6em
-    }
-    .article-meta {
-        display: none;
-    }
-    .article-entry hr {
-        margin: 0;
-    }
-    #container .article-info-post.article-info {
-      display: none;
-      }
-    #container .article .article-title {
-    padding: 0;
-    }
-</style>
+        <p>　　<strong> 异步加载 JS 的3种方法 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+<ul>
+<li><a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文="">
 
-
-          
-        <p>#ceshi</p>
-<table><br>    <tr><br>        <td>Foo2</td><br>    </tr><br></table>
+</the></li>
+</ul>
+<h3 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h3><p>定义和用法:(兼容IE9及以上,主流浏览器)<br>defer 属性规定当页面加载完成之后,才会执行脚本,严格意义上来讲它并不是异步的,原理是延迟了加载。<br>defer 属性仅适用于外部脚本,只用在使用src属性时生效<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-1.7.2.min.js&quot; defer=&quot;defer&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h3 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h3><p>定义和用法:(兼容所有浏览器)<br>async 属性规定一旦脚本可用,就会异步的加载。即当页面开始解析时,js就开始加载,同时进行。<br>async 属性仅适用于外部脚本,只用在使用src属性时生效<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script type=&quot;text/javascript&quot; src=&quot;http://code.jquery.com/jquery-1.7.2.min.js&quot; async=&quot;async&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><br></p>
+<h3 id="动态创建-script-标签"><a href="#动态创建-script-标签" class="headerlink" title="动态创建 script 标签"></a>动态创建 script 标签</h3><p>(兼容所有浏览器)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;动态创建 script 标签&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot;&gt;</div><div class="line">			(function()&#123;</div><div class="line">				//创建script标签</div><div class="line">				var att = document.createElement(&quot;script&quot;);</div><div class="line">				//设置type属性值</div><div class="line">				att.type = &quot;text/javascript&quot;;</div><div class="line">				//设置你需要加载js</div><div class="line">				att.src = &quot;http://code.jquery.com/jquery-1.7.2.min.js&quot;;</div><div class="line">				//获取新创建的script节点</div><div class="line">				var attScript = document.getElementsByTagName(&quot;script&quot;)[0];</div><div class="line">				//将新建的节点插入到  当前节点的父节点下面已有子节点之前</div><div class="line">				attScript.parentNode.insertBefore(att,attScript);</div><div class="line">			&#125;)();</div><div class="line">		&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>效果图如下!<br><img src="/img/2017052601.png" alt="效果图1"><br><img src="/img/2017052602.png" alt="效果图2"><br>希望能够帮到您…</p>
 
       
       
@@ -297,10 +285,76 @@
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2017/05/26/17052601/">异步加载 JS 的3种方法</a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
+        <p><span>发布时间:</span>2017年05月26日 - 14时20分</p>
+        <p><span>最后更新:</span>2017年05月26日 - 15时16分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2017/05/26/17052601/" title="异步加载 JS 的3种方法">http://yoursite.com/2017/05/26/17052601/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/05/26/17052601/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+<nav id="article-nav">
+  
+    <a href="/2017/05/26/170526/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          JavaScript this 关键字的用法
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/06/08/170608/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">jQuery 命名冲突的三种解决方案</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法一"><span class="toc-number">1.</span> <span class="toc-text">方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法二"><span class="toc-number">2.</span> <span class="toc-text">方法二</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#动态创建-script-标签"><span class="toc-number">3.</span> <span class="toc-text">动态创建 script 标签</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
+
+
 
 
 
@@ -327,6 +381,39 @@
     
 
 
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2017/05/26/170526/" title="上一篇: JavaScript this 关键字的用法">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2017/06/08/170608/" title="下一篇: jQuery 命名冲突的三种解决方案">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/17052601/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
 
 
