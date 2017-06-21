@@ -10,7 +10,7 @@ body:after {
   clear: both;
 }
 @font-face {
-  font-family: 'FontAwesome';
+  font-family: Georgia, serif;
   src: url("fonts/fontawesome-webfont.eot");
   src: url("fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/fontawesome-webfont.woff") format("woff"), url("fonts/fontawesome-webfont.ttf") format("truetype"), url("fonts/fontawesome-webfont.svgz#FontAwesomeRegular") format("svg"), url("fonts/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
   font-weight: normal;
@@ -125,7 +125,7 @@ button::-moz-focus-inner {
   padding: 0;
 }
 @font-face {
-  font-family: FontAwesome;
+  font-family: Georgia, serif;
   font-style: normal;
   font-weight: normal;
   src: url("font-awesome/fonts/fontawesome-webfont.eot?v=#4.5.0");
@@ -137,7 +137,7 @@ body,
   height: 100%;
 }
 body {
-  font-family: "微软雅黑", 'Microsoft JhengHei', Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-family: Georgia, serif;
   font-size: 16px;
   background: #3f3f3f;
   color: #999;
@@ -152,7 +152,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Times, Georgia, serif, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Georgia, serif;
 }
 h1,
 h2,
@@ -161,7 +161,7 @@ h3 {
 }
 h1 {
   font-size: 1.5em;
-  font-family: "Segoe UI", "Lucida Grande", Verdana, "Helvetica Neue", Arial, sans-serif, "Microsoft YaHei", "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Georgia, serif;
 }
 h2 {
   font-size: 1.3em;
@@ -2427,7 +2427,7 @@ color
 .archives .archive-article-title span:before {
   display: inline-block;
   content: "“";
-  font-family: serif;
+  font-family: Georgia, serif;
   font-size: 30px;
   float: left;
   margin: 4px 4px 0 -12px;
@@ -2560,7 +2560,7 @@ color
 .article-index .brief:before {
   display: inline-block;
   content: "“";
-  font-family: serif;
+  font-family: Georgia, serif;
   font-size: 30px;
   float: left;
   margin: 4px 4px 0 -12px;
@@ -2629,7 +2629,7 @@ color
   background: #002b36;
   border: 1px dashed #ccc;
   border-radius: 3px;
-  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  font-family: Georgia, serif;
   word-wrap: break-word;
   font-size: 14px;
 }
@@ -2685,7 +2685,7 @@ color
   font-size: 10px;
   border: 1px solid #ccc;
   text-shadow: 0 1px #444;
-  font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+  font-family: Georgia, serif;
 }
 .article-entry pre code {
   font-size: 14px;
@@ -3131,7 +3131,7 @@ color
 .archives .archive-article-title span:before {
   display: inline-block;
   content: "“";
-  font-family: serif;
+  font-family: Georgia, serif;
   font-size: 30px;
   float: left;
   margin: 4px 4px 0 -12px;
@@ -3213,7 +3213,7 @@ color
 }
 .article-entry pre,
 .article-entry code {
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace;
+  font-family: Georgia, serif;
 }
 .article-entry blockquote {
   background-color: #555;
@@ -3252,7 +3252,7 @@ color
   font-size: 90%;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  font-family: Consolas, "Courier New", Courier;
+  font-family: Georgia, serif;
   text-shadow: none;
   background-color: #002b36;
   word-wrap: break-word;
@@ -3376,7 +3376,7 @@ color
   margin: 0 -10px 16px -10px;
   padding: 8px 16px;
   color: #efefef;
-  font-family: Lato, "Microsoft YaHei", sans-serif;
+  font-family: Georgia, serif;
   font-size: 1.1rem;
   text-shadow: none;
   border-bottom: dashed 1px #000;
@@ -3448,7 +3448,7 @@ color
 }
 .article-entry .gist .gist-file {
   border: none;
-  font-family: Menlo, Consolas, "Source Code Pro", Inconsolata, Monaco, monospace;
+  font-family: Georgia, serif;
   margin: 0;
 }
 .article-entry .gist .gist-file .gist-data {
@@ -3546,7 +3546,7 @@ pre .link_url {
 }
 #footer {
   font-size: 12px;
-  font-family: "lucida grande", "lucida sans unicode", lucida, helvetica, "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-family: Georgia, serif;
   color: #999;
   position: absolute;
   bottom: 30px;
