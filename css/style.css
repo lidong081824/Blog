@@ -606,7 +606,7 @@ a {
 .header-author {
   text-align: center;
   margin: 0.67em 0;
-  font-family: Roboto, "Roboto", serif;
+  font-family: Georgia, serif;
   font-size: 30px;
   color: #fff;
   -webkit-transition: 0.3s;
@@ -2262,7 +2262,7 @@ a {
   border-radius: 5px;
   cursor: pointer;
   outline: none;
-  font-family: inherit;
+  font-family: Georgia, serif;
   font-size: 0.9em;
   font-weight: bold;
   color: #999;
@@ -2328,7 +2328,7 @@ color
   margin-top: 1px;
   color: #fff;
   padding: 0;
-  font-family: inherit;
+  font-family: Georgia, serif;
   border: 2px solid transparent;
   border-bottom: 2px solid #d3d3d3;
   border-radius: 2px;
@@ -2348,7 +2348,7 @@ color
   margin-top: 1px;
   color: #fff;
   padding: 0;
-  font-family: inherit;
+  font-family: Georgia, serif;
   border: 2px solid transparent;
   border-bottom: 2px solid #d3d3d3;
   border-radius: 2px;
@@ -4119,7 +4119,7 @@ pre .link_url {
   border-radius: 6px;
   max-width: 200px;
 /*font-family: Verdana,"Lantinghei SC","Hiragino Sans GB","Microsoft Yahei",Helvetica,arial,\5b8b\4f53,sans-serif;*/
-  font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Georgia, serif;
   text-transform: capitalize;
 }
 #anchortitlecontainer:before {
@@ -4297,7 +4297,7 @@ pre .link_url {
   clear: both;
 }
 #plugin-list-title {
-  font-family: "华文新魏";
+  font-family: Georgia, serif;
   font-size: 40px;
   font-weight: 300;
   line-height: 1;
@@ -4319,7 +4319,7 @@ pre .link_url {
 }
 #plugin-search-input {
   font-size: 16px;
-  font-family: inherit;
+  font-family: Georgia, serif;
   -webkit-appearance: none;
   border: 1px solid #ddd;
   padding: 10px 10px;
@@ -4363,7 +4363,7 @@ pre .link_url {
   float: left;
 }
 .plugin-name {
-  font-family: font-title;
+  font-family: Georgia, serif;
   font-weight: bold;
   color: #fff;
   font-size: 20px;
@@ -4545,7 +4545,7 @@ pre .link_url {
 }
 .page-reward .shang_tit {
   width: 100%;
-  font-family: Roboto, "Roboto", serif;
+  font-family: Georgia, serif;
   height: 75px;
   text-align: center;
   line-height: 66px;
