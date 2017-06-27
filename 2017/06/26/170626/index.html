@@ -3,21 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>jQuery 命名冲突的三种解决方案 | 李东的个人博客</title>
+  <title>webpack 前端资源模块化打包加载神器 | 李东的个人博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
-<meta name="keywords" content="jQuery 标签">
+  <meta name="description" content="webpack 是一款很流行的模块化加载兼打包工具，它可以将js less 图片打包，能替代部分的gulp、grunt的工作。">
+<meta name="keywords" content="webpack 标签">
 <meta property="og:type" content="article">
-<meta property="og:title" content="jQuery 命名冲突的三种解决方案">
-<meta property="og:url" content="http://yoursite.com/2017/06/08/170608/index.html">
+<meta property="og:title" content="webpack 前端资源模块化打包加载神器">
+<meta property="og:url" content="http://yoursite.com/2017/06/26/170626/index.html">
 <meta property="og:site_name" content="李东的个人博客">
-<meta property="og:description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
-<meta property="og:image" content="http://yoursite.com/img/2017060801.png">
-<meta property="og:updated_time" content="2017-06-08T05:48:26.128Z">
+<meta property="og:description" content="webpack 是一款很流行的模块化加载兼打包工具，它可以将js less 图片打包，能替代部分的gulp、grunt的工作。">
+<meta property="og:updated_time" content="2017-06-27T02:07:11.791Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jQuery 命名冲突的三种解决方案">
-<meta name="twitter:description" content="jQuery 命名冲突的解决方案。开发中经常会引用很多js库，有些js库中运用了同一种特殊符号()">
-<meta name="twitter:image" content="http://yoursite.com/img/2017060801.png">
+<meta name="twitter:title" content="webpack 前端资源模块化打包加载神器">
+<meta name="twitter:description" content="webpack 是一款很流行的模块化加载兼打包工具，它可以将js less 图片打包，能替代部分的gulp、grunt的工作。">
   
     <link rel="alternative" href="/atom.xml" title="李东的个人博客" type="application/atom+xml">
   
@@ -224,11 +222,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-170608" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-170626" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2017/06/08/170608/" class="article-date">
-      <time datetime="2017-06-08T04:15:00.000Z" itemprop="datePublished">2017-06-08</time>
+      <a href="/2017/06/26/170626/" class="article-date">
+      <time datetime="2017-06-26T08:30:00.000Z" itemprop="datePublished">2017-06-26</time>
 </a>
     </div>
   
@@ -241,7 +239,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      jQuery 命名冲突的三种解决方案
+      webpack 前端资源模块化打包加载神器
     </h1>
   
 
@@ -250,13 +248,13 @@
       <div class="article-info article-info-post">
         
     <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/jQuery/">jQuery</a>
+    <a class="article-category-link" href="/categories/gulp/">gulp</a>
     </div>
 
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/jQuery-标签/">jQuery 标签</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/webpack-标签/">webpack 标签</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -266,17 +264,20 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>　　<strong> jQuery 命名冲突的三种解决方案 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
+        <p>　　<strong> webpack 用法 </strong><excerpt in="" index="" |="" 首页摘要=""></excerpt></p>
 <ul>
 <li><a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文=""><br>$ 符号是jQuery的别称,所有使用$符号的地方都可以使用jQuery代替,两则的作用完全相同。<h3 id="noConflict-方法"><a href="#noConflict-方法" class="headerlink" title="noConflict()方法"></a>noConflict()方法</h3>jQuery.noConflict()方法将变量$的所有权让给前面一个实现他的js库。<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		# divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		(function()&#123;</div><div class="line">			//jQuery将$变量的控制权让出,由其他实现它的js库使用</div><div class="line">			jQuery.noConflict();</div><div class="line">			//此时报错，因为jQuery已经失去了对$变量的操作权</div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//此时正常，因为 $ 是 jQuery 的别称，用法雷同，虽然jQuery失去了$变量的操作权,但是其任然拥有jQuery变量的使用权。</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)();</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
-</the></li>
+<the rest="" of="" contents="" |="" 余下全文=""><br>webpack 的使用依赖 node 所以 你必修先安装 nodejs 。本文重点不在这里, 如果你安装好了 nodejs 环境,我们接着往下走，我们直接进行开发环境的部署。</the></li>
 </ul>
-<p><img src="/img/2017060801.png" alt="效果图"></p>
-<p><br></p>
-<h3 id="自定义别名"><a href="#自定义别名" class="headerlink" title="自定义别名"></a>自定义别名</h3><p>自定义jQuery别名来解决命名冲突<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		#divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		(function()&#123;</div><div class="line">			//此处 jq1 就代表jQuery</div><div class="line">			var jq1 = $.noConflict();</div><div class="line">			//此处 jq2 同样就代表jQuery</div><div class="line">			var jq2 = jQuery.noConflict();</div><div class="line"></div><div class="line">			jq1(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)();</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
-<p><br></p>
-<h3 id="使用区块-区块中依然使用jQuery实现的-变量"><a href="#使用区块-区块中依然使用jQuery实现的-变量" class="headerlink" title="使用区块 区块中依然使用jQuery实现的$变量"></a>使用区块 区块中依然使用jQuery实现的$变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line">	&lt;head&gt;</div><div class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</div><div class="line">		&lt;title&gt;jQuery 命名冲突解决方案&lt;/title&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/prototype-1.7.js&quot; &gt;&lt;/script&gt;</div><div class="line">		&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery.js&quot; &gt;&lt;/script&gt;</div><div class="line">	&lt;/head&gt;</div><div class="line">	&lt;style&gt;</div><div class="line">		* &#123;</div><div class="line">			margin: 0;</div><div class="line">			padding: 0;</div><div class="line">		&#125;</div><div class="line">		#divT&#123;</div><div class="line">			height: 100px;</div><div class="line">			border: 1px dotted red;</div><div class="line">		&#125;</div><div class="line">	&lt;/style&gt;</div><div class="line"></div><div class="line">	&lt;body&gt;</div><div class="line">		&lt;div id=&quot;divT&quot;&gt;</div><div class="line">			&lt;span&gt;测试jQuery 命名冲突的解决方案&lt;/span&gt;</div><div class="line">		&lt;/div&gt;</div><div class="line">	&lt;/body&gt;</div><div class="line">	&lt;script&gt;</div><div class="line">		//jQuery将 $ 变量使用权让出</div><div class="line">		jQuery.noConflict();</div><div class="line"></div><div class="line">		//写法一</div><div class="line">		jQuery(document).ready(function($)&#123;</div><div class="line"></div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//和上面的效果一样</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;);</div><div class="line"></div><div class="line">		//写法二</div><div class="line">		(function($)&#123;</div><div class="line">			//在这个方法中 所有使用到的 $ 变量都是jQuery.js中实现的。</div><div class="line">			$(&quot;#divT&quot;).hide();</div><div class="line">			//和上面的效果一样</div><div class="line">			jQuery(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)(jQuery);</div><div class="line"></div><div class="line">		//写法二</div><div class="line">		//定义别名 后在使用区块</div><div class="line">		var jq1 = jQuery.noConflict();</div><div class="line">		jq1(function()&#123;</div><div class="line">			jq1(&quot;#divT&quot;).hide();</div><div class="line">		&#125;)</div><div class="line">	&lt;/script&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<h3 id="webpack-准备"><a href="#webpack-准备" class="headerlink" title="webpack 准备"></a>webpack 准备</h3><p>1，随便找个磁盘新建一个文件夹 ps:webpackBlog。<br>2, 在 webpackBlog 目录下新建 package.json 记录保存版本依赖包（注意:新建完了package.json后 需要在里面加上一对{}，不然后面直接 –save 的时候会报找不到package.json的错误!），新建webpack.config.js 这是一个 webpack 默认启动文件，类似于 gulpfile.js 文件一样。<br>3, 在 webpackBlog 目录下分别新建 app目录 和 public目录，app 目录 下新建 main.js 和 test.js 便于后边合并，public 下存放静态资源，新建 index.html，<br>4, 为了后续方便 我们在 main.js 里面写上一句话: document.write(“我来自main.js”); test.js 里面写上一句话: document.write(“我来自test.js”);<br>5, 为了后续方便 我们在 app目录下新建一个style.css 文件<br>index.html 内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html lang=&quot;en&quot;&gt;</div><div class="line">  &lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;utf-8&quot;&gt;</div><div class="line">    &lt;title&gt;webpack 简单运用&lt;/title&gt;</div><div class="line">  &lt;/head&gt;</div><div class="line">  &lt;body&gt;</div><div class="line">     &lt;!-- main.bundle.js 这是打包后自定义的名称 --&gt;</div><div class="line">    &lt;script src=&quot;main.bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">  &lt;/body&gt;</div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure></p>
+<p>style.css 内容<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">body&#123;</div><div class="line">	background:yellow;</div><div class="line">	font-size:20px;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h3 id="下载资源"><a href="#下载资源" class="headerlink" title="下载资源"></a>下载资源</h3><p>1 安装 webpack  命令 mpn install webpack@2.2.0 –save<br>2 安装 style-loader  命令 mpn install style-loader –save<br>3 安装 css-loader  命令 mpn install css-loader –save</p>
+<h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><p>完成上述所有准备工作后，我们就可以使用webpack 来本地运行我们的项目了<br>命令: webpack  app/main.js   public/main.bundle.js  ，这个命令的意思就是 使用webpack 命令将app下面的main.js 文件 编译成main.bundle.js 文件 并且放到public 的文件下。<br>下面是控制台信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">$ webpack app/main.js  public/main.bundle.js</div><div class="line">Hash: 6f833c5326b130c5009c</div><div class="line">Version: webpack 2.2.0</div><div class="line">Time: 56ms</div><div class="line">         Asset     Size  Chunks             Chunk Names</div><div class="line">main.bundle.js  2.66 kB       0  [emitted]  main</div><div class="line">   [0] ./app/main.js 30 bytes &#123;0&#125; [built]</div></pre></td></tr></table></figure></p>
+<p>此时,我们进入到 public 问 点击 index.html 文件 浏览器上 会出现一行 “我来自main.js”</p>
+<h3 id="开发环境"><a href="#开发环境" class="headerlink" title="开发环境"></a>开发环境</h3><p>当结构变得复杂，我们不能每当修个一个文件就重新执行上面的编译文件进行重新编译，所以我们需要配置一个开发环境，当文件变动就自动编译而重新让浏览器被渲染。<br>安装 webpack-dev-server  命令: npm install webpack-dev-server –save<br>配置 webpack.config.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">module.exports = &#123;</div><div class="line">	//入口文件可以组合多种 详见webpack官网</div><div class="line">	//注意:这里我们将main.js 和 test.js 合并成为了一个文件</div><div class="line">	entry:&#123;</div><div class="line">              //__dirname 是 node 的用法，值运行这个项目目录</div><div class="line">		main:[__dirname+&quot;/app/main.js&quot;,__dirname+&quot;/app/test.js&quot;]</div><div class="line">	&#125;,</div><div class="line">	//输出文件出口</div><div class="line">	output:&#123;</div><div class="line">		path:__dirname+&quot;/public&quot;,</div><div class="line">		//[name]会指向 入口文件的main 你也可自定义</div><div class="line">		filename:&quot;[name].bundle.js&quot;</div><div class="line">	&#125;,</div><div class="line">	//模块加载器</div><div class="line">	module:&#123;</div><div class="line">		loaders:[</div><div class="line">			//你需要编译什么 就需要加载什么加载器</div><div class="line">			&#123;test:/\.css$/,loader:&apos;style-loader!css-loader&apos;&#125;</div><div class="line">		]</div><div class="line">	&#125;,</div><div class="line">	//本地服务配置项</div><div class="line">	devServer:&#123;</div><div class="line">		//服务器访问的入口文件</div><div class="line">		contentBase:&apos;./public&apos;,</div><div class="line">		//是否实时刷新浏览器</div><div class="line">		inline:true,</div><div class="line">		//自定义服务端口</div><div class="line">		port:8888</div><div class="line"></div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>到这里 我们就可以执行 webpack-dev-server 命令 当控制台出现以下信息时 我们就可以在浏览器中访问: <a href="http://localhost:8888/" target="_blank" rel="external">http://localhost:8888/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">Project is running at http://localhost:8888/</div><div class="line">webpack output is served from /</div><div class="line">Content not from webpack is served from ./public</div><div class="line">Hash: 3dfa6446feb4d72b53c0</div><div class="line">Version: webpack 2.2.0</div><div class="line">Time: 1531ms</div><div class="line">         Asset    Size  Chunks                    Chunk Names</div><div class="line">main.bundle.js  331 kB       0  [emitted]  [big]  main</div><div class="line">chunk    &#123;0&#125; main.bundle.js (main) 317 kB [entry] [rendered]</div><div class="line">   [35] ./app/main.js 64 bytes &#123;0&#125; [built]</div><div class="line">   [36] ./app/test.js 30 bytes &#123;0&#125; [built]</div><div class="line">   [37] (webpack)-dev-server/client?http://localhost:8888 5.78 kB &#123;0&#125; [built]</div><div class="line">   [40] ./app/style.css 1 kB &#123;0&#125; [built]</div><div class="line">   [41] ./~/style-loader/lib/addStyles.js 8.7 kB &#123;0&#125; [built]</div><div class="line">   [43] (webpack)-dev-server/client/overlay.js 3.73 kB &#123;0&#125; [built]</div><div class="line">   [44] (webpack)-dev-server/client/socket.js 897 bytes &#123;0&#125; [built]</div><div class="line">   [46] (webpack)-dev-server/~/html-entities/index.js 231 bytes &#123;0&#125; [built]</div><div class="line">   [49] (webpack)-dev-server/~/sockjs-client/lib/entry.js 244 bytes &#123;0&#125; [built]</div><div class="line">   [79] (webpack)-dev-server/~/strip-ansi/index.js 161 bytes &#123;0&#125; [built]</div><div class="line">   [82] (webpack)/hot/emitter.js 77 bytes &#123;0&#125; [built]</div><div class="line">   [84] (webpack)/~/node-libs-browser/~/punycode/punycode.js 14.7 kB &#123;0&#125; [built]</div><div class="line">   [87] (webpack)/~/node-libs-browser/~/querystring-es3/index.js 127 bytes &#123;0&#125; [built]</div><div class="line">   [88] (webpack)/~/node-libs-browser/~/url/url.js 23.3 kB &#123;0&#125; [built]</div><div class="line">   [90] multi (webpack)-dev-server/client?http://localhost:8888 ./app/main.js ./app/test.js 52 bytes &#123;0&#125; [built]</div><div class="line">     + 76 hidden modules</div><div class="line">webpack: Compiled successfully.</div></pre></td></tr></table></figure></p>
+<p>若果你没有任何问题的情况下走到这一步，那么浏览器会出现两行字’我来自main.js’’我来自test.js’.<br>但是!!!并没有背景色，所以我们还需要修改 main.js将css 引入,我们修改 main.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">//将css文件引入进来，因为配置文件已经加载了css模块的加载器，所以这个文件引入进来可以直接被编译使用</div><div class="line">require(&quot;./style.css&quot;);</div><div class="line">document.write(&quot;我来自main.js&quot;);</div></pre></td></tr></table></figure></p>
+<p>还要注意下执行webpack 是将静态资源编译打包到指定的目录，文件是可见的。<br>执行webpack-dev-server 只会将静态资源放在内存中，文件在public目录下是不可见的，但两者都不影响正常访问。</p>
 
       
       
@@ -286,13 +287,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></p>
+        <p><span>本文标题:</span><a href="/2017/06/26/170626/">webpack 前端资源模块化打包加载神器</a></p>
         <p><span>文章作者:</span><a href="/" title="访问 lidong 的个人博客">lidong</a></p>
-        <p><span>发布时间:</span>2017年06月08日 - 12时15分</p>
-        <p><span>最后更新:</span>2017年06月08日 - 13时48分</p>
+        <p><span>发布时间:</span>2017年06月26日 - 16时30分</p>
+        <p><span>最后更新:</span>2017年06月27日 - 10时07分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/06/08/170608/" title="jQuery 命名冲突的三种解决方案">http://yoursite.com/2017/06/08/170608/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/06/08/170608/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2017/06/26/170626/" title="webpack 前端资源模块化打包加载神器">http://yoursite.com/2017/06/26/170626/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2017/06/26/170626/　　作者: lidong" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -305,20 +306,15 @@
 
 <nav id="article-nav">
   
-    <a href="/2017/05/26/170527/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/06/19/170619/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          异步加载 JS 的3种方法
+          gulp 基于流的自动化构建工具
         
       </div>
     </a>
   
-  
-    <a href="/2017/06/19/170619/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">gulp 基于流的自动化构建工具</div>
-      <strong class="article-nav-caption">></strong>
-    </a>
   
 </nav>
 
@@ -327,7 +323,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#noConflict-方法"><span class="toc-number">1.</span> <span class="toc-text">noConflict()方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自定义别名"><span class="toc-number">2.</span> <span class="toc-text">自定义别名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用区块-区块中依然使用jQuery实现的-变量"><span class="toc-number">3.</span> <span class="toc-text">使用区块 区块中依然使用jQuery实现的$变量</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#webpack-准备"><span class="toc-number">1.</span> <span class="toc-text">webpack 准备</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#下载资源"><span class="toc-number">2.</span> <span class="toc-text">下载资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#本地运行"><span class="toc-number">3.</span> <span class="toc-text">本地运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#开发环境"><span class="toc-number">4.</span> <span class="toc-text">开发环境</span></a></li></ol>
 </div>
 <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
@@ -384,15 +380,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2017/05/26/170527/" title="上一篇: 异步加载 JS 的3种方法">
+            <a href="/2017/06/19/170619/" title="上一篇: gulp 基于流的自动化构建工具">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2017/06/19/170619/" title="下一篇: gulp 基于流的自动化构建工具">
-                <i class="fa fa-angle-right"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/06/26/170626/">webpack 前端资源模块化打包加载神器</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/19/170619/">gulp 基于流的自动化构建工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/06/08/170608/">jQuery 命名冲突的三种解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170527/">异步加载 JS 的3种方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/26/170526/">JavaScript this 关键字的用法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/24/170524/">JavaScript 经典笔试题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/23/170523/">jQuery 图片延迟加载方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/18/170518/">清除浮动的方法</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/10/170510/">js事件流(如何阻止事件冒泡)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/05/170505/">ng-options默认选中对象(或默认值)</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/04/170504/">JavaScript中删除节点中的小坑</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/05/02/170502/">如何用git操作GitHub</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/04/30/index/">如何在GitHub上创建自己的仓库</a></li></ul>
